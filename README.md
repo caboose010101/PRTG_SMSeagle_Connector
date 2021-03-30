@@ -6,5 +6,5 @@ https://www.smseagle.eu/
 https://www.paessler.com/
 
 Link to SMSeagle's API documentation & Support Portal</br>
-https://www.smseagle.eu/api/
+https://www.smseagle.eu/api/</br>
 https://support.smseagle.eu/hc/en-us
