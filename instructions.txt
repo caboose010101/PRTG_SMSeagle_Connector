@@ -1,10 +1,17 @@
 The document will assume you already know how to use PRTG and a SMSeagle device.
 Last test on PRTG version 20.4.64.1402+ and SMSeagle version 3.51
 
-Log into PRTG and head to 'System Administration > Notification Delivery > SMS Delivery' Section
+In PRTG head to 'Setup > System Administration > Notification Delivery > SMS Delivery' Section
   1) Set Configuration Mode to 'Enter a custom URL for a provider not listed'
   2) Set Custom URL to 'http://SMSEAGLE-IP-ADDRESS-HERE/index.php/http_api/send_sms?login=USERNAME-HERE&pass=PASSWORD-HERE&to=%SMSNUMBER&message=%SMSTEXT
   3) Set HTTP Authentication to 'Do not use HTTP basic authentication (default)'
   4) Set Custom SNI to 'Do not send SNI (default)'
   5) Set Encoding for SMS to 'ANSI local system code page (default)'
   6) Set Maximum Length of Text to a value of '1300'
+
+In PRTG head to 'Setup > Account Settings > Notification Templates' Section and create a new Notification Template
+  1) Fill in any of the needed settings you want but for the rest I recommend the following.
+  2) Set Notification Summarization Method to 'Always notify ASAP, never summarize'
+  3) Enable Send SMS/Pager Message section
+  4) Send to Number section, here you can type the 10 digit phone numbers devided by commas that you want alerts to go to.
+  5) Message section, I use this format for alarms '%device | %shortname | %status'
