@@ -1,0 +1,10 @@
+The document will assume you already know how to use PRTG and a SMSeagle device.
+Last test on PRTG version 20.4.64.1402+ and SMSeagle version 3.51
+
+Log into PRTG and head to 'System Administration > Notification Delivery > SMS Delivery' Section
+  1) Set Configuration Mode to 'Enter a custom URL for a provider not listed'
+  2) Set Custom URL to 'http://SMSEAGLE-IP-ADDRESS-HERE/index.php/http_api/send_sms?login=USERNAME-HERE&pass=PASSWORD-HERE&to=%SMSNUMBER&message=%SMSTEXT
+  3) Set HTTP Authentication to 'Do not use HTTP basic authentication (default)'
+  4) Set Custom SNI to 'Do not send SNI (default)'
+  5) Set Encoding for SMS to 'ANSI local system code page (default)'
+  6) Set Maximum Length of Text to a value of '1300'
