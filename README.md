@@ -4,3 +4,7 @@ Here are is the code I used to connect SMS gateway device to PRTG for alerting. 
 https://www.smseagle.eu/
 
 https://www.paessler.com/
+
+Link to SMSeagle's API documentation & Support Portal
+https://www.smseagle.eu/api/
+https://support.smseagle.eu/hc/en-us
